@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PEAK 22° — Photos</title>
+  <link rel="icon" type="image/png" href="assets/peak22logo.png">
+  <meta name="description" content="PEAK 22° photo gallery — nights, events and moments from Bristol's underground." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="assets/peak22logo.png" alt="PEAK 22°">
+    </a>
+    <div class="nav-tabs">
+      <a href="index.html">Home</a>
+      <a href="photos.html" class="active">Photos</a>
+    </div>
+  </nav>
+
+  <!-- ─── PAGE HERO ─── -->
+  <div class="photos-hero">
+    <div>
+      <div class="section-label">Archive</div>
+      <h1 class="section-title reveal">The<br>Gallery</h1>
+    </div>
+  </div>
+
+  <!-- ─── FILTERS ─── -->
+  <div class="gallery-filters" id="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="events">Events</button>
+    <button class="filter-btn" data-filter="crowd">Crowd</button>
+    <button class="filter-btn" data-filter="artists">Artists</button>
+    <button class="filter-btn" data-filter="venue">Venue</button>
+  </div>
+
+  <!-- ─── GALLERY ─── -->
+  <!--
+    Drop your actual photos into assets/photos/ and update the src attributes below.
+    Each item has a data-category for filtering and a data-label for the hover overlay.
+    Using placeholder images below — swap these out for real event photos.
+  -->
+  <div class="gallery-grid" id="galleryGrid">
+
+    <div class="gallery-item reveal" data-category="events" data-label="Vol. XII — Motion">
+      <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80" alt="Event photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Vol. XII — Motion</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="crowd" data-label="The Faithful">
+      <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&q=80" alt="Crowd photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">The Faithful</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="artists" data-label="On Decks">
+      <img src="https://images.unsplash.com/photo-1571266028243-e4733b0f0bb0?w=600&q=80" alt="DJ photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">On Decks</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="venue" data-label="Before the Drop">
+      <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80" alt="Venue photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Before the Drop</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="events" data-label="Red Room Sessions">
+      <img src="https://images.unsplash.com/photo-1493676304819-0d7a77d90e41?w=600&q=80" alt="Event photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Red Room Sessions</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="crowd" data-label="Pure Energy">
+      <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&q=80" alt="Crowd photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Pure Energy</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="artists" data-label="Live from BS1">
+      <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&q=80" alt="Artist photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Live from BS1</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="venue" data-label="Marble Factory">
+      <img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?w=600&q=80" alt="Venue photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Marble Factory</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="events" data-label="Halo Takeover">
+      <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80" alt="Event photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Halo Takeover</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="crowd" data-label="2AM Faces">
+      <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&q=80" alt="Crowd photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">2AM Faces</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="artists" data-label="Selector">
+      <img src="https://images.unsplash.com/photo-1609077485500-8882a4c0a73d?w=600&q=80" alt="DJ photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Selector</span></div>
+    </div>
+
+    <div class="gallery-item reveal" data-category="events" data-label="Summit — Open Air">
+      <img src="https://images.unsplash.com/photo-1563841930606-67e2bce48b78?w=600&q=80" alt="Event photo" loading="lazy">
+      <div class="overlay"><span class="overlay-label">Summit — Open Air</span></div>
+    </div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">✕ CLOSE</span>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <img src="assets/peak22logo.png" alt="PEAK 22°">
+        <p class="footer-desc">Bristol's underground party collective. Music, culture, and community since day one.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="photos.html">Photos</a>
+        <a href="#">Events</a>
+        <a href="#">Mixes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:info@peak22.co.uk">info@peak22.co.uk</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">@peak22degrees</a>
+        <a href="https://ra.co" target="_blank" rel="noopener">RA Profile</a>
+        <p>Bristol, UK 🇬🇧</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 PEAK 22°. All rights reserved.</span>
+      <span>Bristol, England</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
