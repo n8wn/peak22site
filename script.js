@@ -90,16 +90,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const y = (Math.random() - 0.5) * 6;
         heroLogo.style.transform = `translate(${x}px, ${y}px)`;
         heroLogo.style.filter    =
-          `drop-shadow(${x * 1.5}px 0 0 rgba(192,57,43,0.9)) ` +
-          `drop-shadow(${-x * 1.5}px 0 0 rgba(57,192,192,0.4)) ` +
-          `drop-shadow(0 0 20px rgba(192,57,43,0.3))`;
+          `drop-shadow(${x * 1.5}px 0 0 rgba(42,191,191,0.9)) ` +
+          `drop-shadow(${-x * 1.5}px 0 0 rgba(255,255,255,0.5)) ` +
+          `drop-shadow(0 0 24px rgba(42,191,191,0.4))`;
 
         frames++;
         if (frames > 10) {
           clearInterval(glitch);
           heroLogo.style.transition = 'transform 0.3s ease, filter 0.3s ease';
           heroLogo.style.transform  = '';
-          heroLogo.style.filter     = 'drop-shadow(0 0 40px rgba(192,57,43,0.5))';
+          heroLogo.style.filter     = 'drop-shadow(0 0 50px rgba(42,191,191,0.35))';
           glitching = false;
         }
       }, 55);

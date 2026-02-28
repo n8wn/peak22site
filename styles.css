@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;600&display=swap');
 
 :root {
-  --black:    #0a0a0a;
-  --deep:     #111111;
-  --surface:  #1a1a1a;
-  --border:   #2a2a2a;
-  --red:      #8b1a1a;
-  --red-hot:  #c0392b;
-  --white:    #f0ece8;
+  --black:    #000000;
+  --deep:     #080808;
+  --surface:  #111111;
+  --border:   #222222;
+  --red:      #2abfbf;
+  --red-hot:  #4dd9d9;
+  --white:    #ffffff;
   --muted:    #888;
   --font-display: 'Bebas Neue', sans-serif;
   --font-body:    'DM Sans', sans-serif;
@@ -20,7 +20,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--black);
+  background: #000000;
   color: var(--white);
   font-family: var(--font-body);
   font-weight: 300;
@@ -83,10 +83,10 @@ nav {
 
 .nav-logo img {
   height: 38px;
-  filter: brightness(0) invert(1);
+  filter: none;
   transition: filter 0.3s;
 }
-.nav-logo img:hover { filter: brightness(0) invert(1) drop-shadow(0 0 8px var(--red)); }
+.nav-logo img:hover { filter: drop-shadow(0 0 8px var(--red-hot)); }
 
 .nav-tabs {
   display: flex;
@@ -131,8 +131,8 @@ nav {
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(139,26,26,0.18) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 80% 70%, rgba(139,26,26,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(42,191,191,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 80% 70%, rgba(42,191,191,0.05) 0%, transparent 60%),
     var(--black);
 }
 
@@ -140,8 +140,8 @@ nav {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(139,26,26,0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139,26,26,0.07) 1px, transparent 1px);
+    linear-gradient(rgba(42,191,191,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42,191,191,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
 }
@@ -156,8 +156,7 @@ nav {
 }
 .hero-logo-main img {
   width: min(500px, 80vw);
-  filter: drop-shadow(0 0 40px rgba(192,57,43,0.5));
-  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 50px rgba(42,191,191,0.35));
 }
 
 .hero-tagline {
@@ -431,11 +430,10 @@ footer {
 }
 footer img {
   height: 32px;
-  mix-blend-mode: normal;
   opacity: 0.85;
   margin-bottom: 1rem;
   display: block;
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 .footer-desc {
   font-size: 0.8rem;
@@ -478,7 +476,7 @@ footer img {
   display: flex;
   align-items: flex-end;
   padding: 8rem 3rem 3rem;
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139,26,26,0.2) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(42,191,191,0.12) 0%, transparent 70%);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -536,7 +534,7 @@ footer img {
 .gallery-item .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(139,26,26,0.6) 0%, transparent 50%);
+  background: linear-gradient(to top, rgba(42,191,191,0.5) 0%, transparent 55%);
   opacity: 0;
   transition: opacity 0.4s;
   display: flex;
